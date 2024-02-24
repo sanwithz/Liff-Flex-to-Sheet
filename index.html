@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX โฆษณาซูม</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="https://bit.ly/fontiton5" type="text/css" charset="utf-8" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai');
+    /* @import url('https://fonts.googleapis.com/css2?family=Prompt'); */
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Noto Sans Thai', sans-serif;
+      /* font-family: 'Prompt', sans-serif; */
+      /*       font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
+
+    }
+
+    body {
+      /* font-family: Kanit, sans-serif; */
+      background: rgb(252, 233, 233);
+      background: linear-gradient(0deg, rgba(252, 233, 233, 1) 0%, rgba(224, 244, 241, 1) 26%, rgba(255, 255, 255, 1) 71%);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-color: skyblue;
+    }
+
+    .list {
+      background-color: #ffffff;
+      padding: 1.8em 1.2em;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 0.6em;
+    }
+
+    .qBox {
+      border: solid 2px #525150 !important;
+      padding: 1rem;
+      margin: 0 10px;
+      border-radius: 13px;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    label {
+      color: black;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    button[type="submit"] {
+      font-family: 'Noto Sans Thai', sans-serif;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      padding: 3%;
+      background: #b26bc2;
+      border: none;
+      border-radius: 5px;
+      font-size: 17px;
+      border-top-style: none;
+      border-right-style: none;
+      border-left-style: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #FFCE00;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <center>
+    <br />
+    <img src="https://sv1.picz.in.th/images/2023/03/24/mWNBPW.gif"
+      style="width:200px; height:auto; padding-bottom: 10px; ">
+    <div class="form-group mb-2">
+      <label for="searchtext">
+        <h3>FLEX โฆษณาซูม</h3>
+        <h5 class="text-center text-danger">สื่อ และนวัตกรรมครูสิทธิชาติ สิทธิ</h5>
+      </label>
+    </div>
+  </center>
+  <br />
+  <main class="container">
+    <div class="container list">
+      <form class="w-100 mx-auto">
+        <div class="badge bg-primary text-wrap" style="width: 7rem;">
+          <ion-icon name="calendar-outline"></ion-icon>
+          วันที่ขึ้นซูม
+        </div>
+
+        <div class="input-group mb-3 mt-1">
+          <span class="input-group-text" id="basic-addon1">วันที่: </span>
+          <input type="text" name="date" class="form-control" placeholder="เลือกวันที่" aria-label="เลือกวันที่"
+            aria-describedby="basic-addon1" required autofocus>
+        </div>
+
+        <div class="badge bg-primary text-wrap " style="width: 7rem;">
+          <ion-icon name="people-circle-outline"></ion-icon>
+          ชื่อหัวข้อ
+        </div>
+        <div id="form-name" class="mb-3">
+          <span>
+            <input class="form-control w-100 mt-1" name="name" placeholder="กรอกชื่อหัวข้อซูม">
+        </div>
+
+        <div class="badge bg-primary text-wrap" style="width: 7rem;">
+          <ion-icon name="people-circle-outline"></ion-icon>
+          Banner
+        </div>
+        <div id="form-name">
+          <span>
+            <input type="text" name="file" class="form-control w-100 mt-1" name="file" placeholder="Image URL">
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning w-100"><i class="bi bi-send-fill"></i>&nbsp;ส่ง FLEX</button>
+      </form>
+    </div>
+  </main>
+  <br />
+  <div class="text-center p-4 col-12 mt-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright | พัฒนาโดยครูสิทธิชาติ สิทธิ
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+
+
+  <script>$(document).ready(function () {
+
+      var liffId = "1661008850-grjdAdWm";
+      initializeLiff(liffId);
+    })
+
+    function initializeLiff(liffId) {
+      liff
+        .init({
+          liffId: liffId, withLoginOnExternalBrowser: true
+        })
+        .then(() => {
+
+          if (!liff.isInClient() && !liff.isLoggedIn()) {
+            window.alert("กรุณาเข้าสู่ระบบบัญชี LINE ของคุณ");
+            liff.login({redirectUri: location.href});
+          }
+        })
+        .catch((err) => {
+          console.log('LIFF Initialization failed ', err);
+        });
+    }
+
+    function sendText(text) {
+      if (!liff.isInClient()) {
+        shareTargetPicker(text);
+      } else {
+        sendMessages(text);
+      }
+    }
+
+
+
+    function sendMessages(text) {
+      liff.sendMessages(text).then(function () {
+        liff.closeWindow();
+      }).catch(function (error) {
+        window.alert('Failed to send message ' + error);
+      });
+    }
+
+
+    function shareTargetPicker(text) {
+      liff.shareTargetPicker(text).then(function (res) {
+        if (res) {
+          liff.closeWindow();
+        } else {
+          // sending message canceled
+          console.log("TargetPicker was closed!");
+        }
+      })
+        .catch(function (error) {
+          // something went wrong before sending a message
+          console.log("something wrong happen");
+        });
+    }</script>
+  <script>$(function () {
+
+      $(function () {
+        $('input[name="date"]').datepicker({
+          dateFormat: 'dd/mm/yy',
+        });
+      });
+
+
+      $('#form-number').click(function () {
+        $('#form-name').empty();
+        var num = $('input[name="number"]:checked').val();
+        for (i = 0; i < num; i++) {
+          $('#form-name').append(
+            `<span><ion-icon name="create-outline"></ion-icon> ลำดับที่ ${i + 1}</span><input class="form-control w-100 mt-1" name="name" maxlength="10">`
+          );
+        }
+      });
+
+      $('form').submit(function () {
+        var date = $('input[name="date"]').val();
+        var number = $('input[name="number"]:checked').val();
+        var name = $('input[name="name"]').val();
+
+        /** DATA*/
+        let headerText = `📢 เรียนคุณ Test name`;
+        let bodyText = `ท่านได้รับการอนุมัติเรียบร้อยแล้ว`;
+        let footerText1 = '👌 เชิญเข้าสู่ระบบได้';
+        let actionUrl1 = 'https://www.sanwithz.com/p/vip.html';
+        let footerText2 = '🔗 ไฟล์สำหรับสมาชิก';
+        let actionUrl2 = 'https://www.sanwithz.com/';
+        let image1 = 'https://sv1.picz.in.th/images/2023/05/04/yP5vmu.png';
+        let eximage1 = 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_1.png';
+        let eximage2 = 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_2.png';
+        let text = 'LINE LIFF to Sheet';
+
+        function formatDateThai(dateString) {
+          const date = new Date(dateString);
+          const day = date.getDate();
+          const month = date.getMonth() + 1;
+          const year = date.getFullYear() + 543;
+
+          const thaiMonths = [
+            "",
+            "ม.ค.",
+            "ก.พ.",
+            "มี.ค.",
+            "เม.ย.",
+            "พ.ค.",
+            "มิ.ย.",
+            "ก.ค.",
+            "ส.ค.",
+            "ก.ย.",
+            "ต.ค.",
+            "พ.ย.",
+            "ธ.ค.",
+          ];
+
+          return `${day} ${thaiMonths[month]} ${year}`;
+        }
+
+        var date = $('input[name="date"]').val();
+        var thaiDate = formatDateThai(date);
+        var banner = $('input[name="file"]').val();
+
+        // var number = $('input[name="number"]:checked').val();
+        // var names = '';
+        // $('#form-name').children().each(function (i, elm) {
+        //   names += $(elm).val() + '\n';
+        // })
+        // names = names.slice(0, -1);
+
+        var msg = [
+          // Flex head
+          {
+            "type": "flex",
+            "altText": "Flex Message with Image",
+            "contents":
+
+
+            // Flex Content start
+            {
+              "type": "bubble",
+              "header": {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    // "text": headerText,
+                    "text": "📢 สื่อและนวัตกรรมครูสิทธิชาติ",
+                    "weight": "bold",
+                    "size": "md",
+                    "contents": []
+                  }
+                ]
+              },
+              "hero": {
+                "type": "image",
+                "url": banner,
+                "size": "full",
+                "aspectRatio": "20:13",
+                "aspectMode": "cover",
+                // "action": {
+                //   "type": "uri",
+                //   "label": "Action",
+                //   "uri": "https://linecorp.com/"
+                // }
+              },
+              "body": {
+                "type": "box",
+                "layout": "horizontal",
+                "spacing": "md",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "flex": 1,
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": eximage1,
+                        "gravity": "bottom",
+                        "size": "sm",
+                        "aspectRatio": "4:3",
+                        "aspectMode": "cover"
+                      },
+                      {
+                        "type": "image",
+                        "url": eximage2,
+                        "margin": "md",
+                        "size": "sm",
+                        "aspectRatio": "4:3",
+                        "aspectMode": "cover"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "flex": 2,
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "หัวข้อ : " + name,
+                        "size": "xs",
+                        "flex": 1,
+                        "gravity": "top",
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "separator"
+                      },
+                      {
+                        "type": "text",
+                        "text": "วันที่ : " + thaiDate,
+                        "size": "xs",
+                        "flex": 2,
+                        "gravity": "center",
+                        "contents": []
+                      },
+                      {
+                        "type": "separator"
+                      },
+                      {
+                        "type": "text",
+                        "text": "เวลา : 19.00 -22.00 น.",
+                        "size": "xs",
+                        "flex": 2,
+                        "gravity": "center",
+                        "contents": []
+                      },
+                      {
+                        "type": "separator"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ราคา : 350 บาท",
+                        "weight": "bold",
+                        "color": "#1DB446",
+                        "size": "xs",
+                        "flex": 1,
+                        "gravity": "bottom",
+                        "contents": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "button",
+                    "flex": 2,
+                    "style": "primary",
+                    "color": "#b26bc2",
+                    "action": {
+                      "type": "uri",
+                      "label": "ลงทะเบียน",
+                      "uri": actionUrl1
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "flex": 2,
+                    "style": "secondary",
+                    "color": "#FFCE00",
+                    "action": {
+                      "type": "uri",
+                      "label": "ดูตัวอย่าง",
+                      "uri": actionUrl2
+                    }
+                  }
+                ]
+              }
+            }
+            // Flex End
+
+
+          }  // Flex head End 
+        ]
+
+        sendText(msg);
+        // shareTargetPicker(msg)
+
+        return false;
+      });
+    });</script>
+</body>
+
+</html>
